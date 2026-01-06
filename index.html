@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Ramírez & Asoc. | Excelencia Jurídica</title>
+    
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background-color: #fdfaf6; 
+            color: #1a1a1a; 
+            font-family: 'Georgia', serif; 
+            line-height: 1.6;
+        }
+
+        /* CABECERA */
+        header { 
+            background-color: #0d1424; 
+            color: #d4af37; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #d4af37;
+        }
+        .logo-estudio {
+            max-width: 180px;
+            height: auto;
+            margin: 0 auto 25px;
+            display: block;
+        }
+        header h1 { font-size: 2.8rem; margin: 0; letter-spacing: 3px; text-transform: uppercase; }
+        .sub-header { color: #ffffff; font-size: 1.1rem; font-style: italic; margin-top: 15px; opacity: 0.9; }
+
+        /* SECCIÓN VIRTUALIDAD */
+        .virtual-section { 
+            background-color: #121c2f; 
+            color: white; 
+            padding: 60px 20px; 
+            text-align: center;
+        }
+        .virtual-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            max-width: 1100px; 
+            margin: 30px auto; 
+        }
+        .card-digital { 
+            background: rgba(255,255,255,0.05); 
+            padding: 25px; 
+            border-radius: 4px; 
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        /* CONTENEDOR */
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        /* SERVICIOS */
+        .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 50px; }
+        .servicio-item { background-color: #0d1424; color: white; padding: 30px; border-top: 3px solid #d4af37; }
+        .servicio-item h3 { color: #d4af37; margin-top: 0; }
+        .servicio-item ul { padding-left: 20px; }
+
+        /* FAQ REESTRUCTURADO (TODO VISIBLE) */
+        .faq-titulo { text-align: center; color: #0d1424; font-size: 2rem; margin-bottom: 40px; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
+        .faq-bloque { margin-bottom: 35px; background: white; padding: 25px; border-left: 5px solid #d4af37; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .faq-bloque h3 { margin-top: 0; color: #0d1424; font-size: 1.2rem; }
+        .faq-bloque p { margin-bottom: 0; color: #444; }
+
+        /* BOTONES Y OTROS */
+        .wa-link-flotante {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white !important;
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            text-decoration: none !important;
+            z-index: 9999;
+            font-weight: bold;
+        }
+        .btn-contacto {
+            display: block;
+            background: #0d1424;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #d4af37;
+            max-width: 400px;
+            margin: 40px auto;
+        }
+
+        footer { background-color: #000; color: #888; padding: 60px 20px; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/5491146731730" class="wa-link-flotante" target="_blank">
+        💬 WhatsApp Consultas
+    </a>
+
+    <header>
+        <img src="logo.png" alt="Logo Estudio Ramírez" class="logo-estudio">
+        <h1>RAMÍREZ & ASOC.</h1>
+        <p class="sub-header">“Defensa Inquebrantable y Rigor Técnico tras 15 años de trayectoria.”</p>
+    </header>
+
+    <section class="virtual-section">
+        <h2 style="color: #d4af37;">Atención 100% Virtual</h2>
+        <div class="virtual-grid">
+            <div class="card-digital"><h4>📲 Consulta Ágil</h4><p>Atención inmediata por WhatsApp y Videollamada.</p></div>
+            <div class="card-digital"><h4>💼 Gestión Remota</h4><p>Digitalización de pruebas y envío de Cartas Documento online.</p></div>
+            <div class="card-digital"><h4>🏛️ Audiencias Online</h4><p>Representación profesional en SECLO y Mediaciones Civiles.</p></div>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <div class="servicios-grid">
+            <div class="servicio-item">
+                <h3>Derecho Laboral</h3>
+                <ul>
+                    <li>Despidos de Alta Complejidad</li>
+                    <li>Accidentes de Trabajo (ART)</li>
+                    <li>Trabajo No Registrado</li>
+                    <li>Diferencias Salariales</li>
+                </ul>
+            </div>
+            <div class="servicio-item">
+                <h3>Derecho Civil</h3>
+                <ul>
+                    <li>Sucesiones y Herencias</li>
+                    <li>Accidentes de Tránsito</li>
+                    <li>Contratos y Convenios</li>
+                    <li>Daños y Perjuicios</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="faq-titulo">Preguntas Frecuentes</h2>
+
+        <div class="faq-bloque">
+            <h3>1. ¿Cómo inicio mi reclamo de forma virtual?</h3>
+            <p>Es muy sencillo: nos contactás por WhatsApp, nos enviás fotos de tu DNI y de la documentación (recibos, telegramas, fotos) y coordinamos una entrevista virtual para definir la estrategia legal.</p>
+        </div>
+
+        <div class="faq-bloque">
+            <h3>2. ¿Se cobra la redacción de telegramas y cartas documento?</h3>
+            <p>Los <strong>Telegramas Laborales (TCL)</strong> son gratuitos para el trabajador. Para Cartas Documento civiles o contratos, se cobra un honorario profesional por la redacción técnica.</p>
+        </div>
+
+        <div class="faq-bloque">
+            <h3>3. ¿Tengo que pagar para iniciar un reclamo por Despido o ART?</h3>
+            <p>No. Trabajamos con el sistema de <strong>Cuota Litis</strong>: nosotros invertimos el trabajo y el cliente solo abona honorarios si logramos un resultado favorable o un acuerdo bancarizado.</p>
+        </div>
+
+        <div class="faq-bloque">
+            <h3>4. Me tienen trabajando "en negro", ¿puedo reclamar?</h3>
+            <p>Absolutamente. Iniciamos el intercambio telegráfico para que se regularice tu situación o te consideres despedido con todas las indemnizaciones agravadas que marca la ley.</p>
+        </div>
+
+        <div class="faq-bloque">
+            <h3>5. Tuve un accidente yendo al trabajo, ¿me corresponde indemnización?</h3>
+            <p>Sí, es un accidente <strong>in itinere</strong>. La ART debe cubrir los gastos médicos y, si te queda alguna secuela física, te corresponde una indemnización que nosotros reclamamos por vos.</p>
+        </div>
+
+        <div class="faq-bloque">
+            <h3>6. Recibí una Carta Documento, ¿cuánto tiempo tengo para responder?</h3>
+            <p>Los plazos suelen ser de 48 a 72 hs. Es vital que no respondas por tu cuenta. Envianos una foto de inmediato para redactar la contestación técnica adecuada.</p>
+        </div>
+
+        <div class="faq-bloque">
+            <h3>7. ¿Cómo cobro mi dinero si el proceso es virtual?</h3>
+            <p>Todo el sistema judicial está bancarizado. El dinero de acuerdos o sentencias se deposita directamente en una <strong>cuenta judicial</strong> a tu nombre y luego se transfiere a tu <strong>CBU personal</strong>. Es un proceso 100% seguro y oficial.</p>
+        </div>
+
+        <a href="https://wa.me/5491146731730" class="btn-contacto">INICIAR MI CONSULTA AHORA</a>
+
+    </div>
+
+    <footer>
+        <div style="color: #d4af37; letter-spacing: 4px; font-size: 1.5rem; margin-bottom: 15px;">RAMÍREZ & ASOCIADOS</div>
+        <p>15 Años de Experiencia Judicial en GBA y CABA</p>
+        <p style="opacity: 0.3; font-size: 0.75rem; margin-top: 40px;">© 2026 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
