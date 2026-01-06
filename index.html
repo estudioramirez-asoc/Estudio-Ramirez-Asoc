@@ -47,10 +47,11 @@
             border: 1px solid #ddd; 
             box-shadow: 10px 10px 0px rgba(10,15,26,0.05);
             transition: 0.3s;
+            text-align: left;
         }
         .tarjeta:hover { transform: translateY(-5px); box-shadow: 15px 15px 0px rgba(197,160,89,0.2); border-color: var(--oro); }
 
-        .tarjeta h4 { color: var(--oro); font-size: 1.4rem; margin-top: 0; text-transform: uppercase; }
+        .tarjeta h4 { color: var(--oro); font-size: 1.4rem; margin-top: 0; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 10px; }
 
         .seccion-oscura { 
             background: var(--azul); color: #fff; padding: 100px 20px; 
@@ -60,7 +61,6 @@
 
         .faq { text-align: left; background: #fff; padding: 25px; margin-bottom: 20px; border-left: 10px solid var(--azul); border-right: 1px solid #ddd; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
-        /* BOTÓN FLOTANTE ACTUALIZADO */
         .wa-flotante { 
             position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white !important; 
             padding: 15px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; z-index: 1000;
@@ -109,15 +109,25 @@
         </section>
 
         <section class="seccion">
-            <h2>Áreas de Práctica</h2>
+            <h2>Áreas de Práctica Especializada</h2>
             <div class="grid">
-                <div class="tarjeta">
-                    <h4>Derecho Laboral</h4>
-                    <p>Despidos, ART, Accidentes y Trabajo no registrado. Defensa integral del trabajador.</p>
+                <div class="tarjeta" style="background: var(--azul); color: white;">
+                    <h4 style="color: var(--oro);">Derecho Laboral</h4>
+                    <ul style="padding-left: 20px; line-height: 2;">
+                        <li>Despidos de alta complejidad</li>
+                        <li>Accidentes de Trabajo (ART)</li>
+                        <li>Trabajo no registrado (En negro)</li>
+                        <li>Diferencias salariales y SECLO</li>
+                    </ul>
                 </div>
                 <div class="tarjeta">
                     <h4>Derecho Civil</h4>
-                    <p>Sucesiones, Accidentes de Tránsito y Daños. Gestión de conflictos patrimoniales.</p>
+                    <ul style="padding-left: 20px; line-height: 2;">
+                        <li>Sucesiones y Herencias</li>
+                        <li>Accidentes de Tránsito</li>
+                        <li>Daños y Perjuicios</li>
+                        <li>Contratos y Mediaciones</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -126,25 +136,5 @@
             <h2>Preguntas Frecuentes</h2>
             <div style="max-width: 800px; margin: 0 auto;">
                 <div class="faq">
-                    <strong>¿Cómo es el cobro de honorarios?</strong>
-                    <p>En reclamos laborales trabajamos a Cuota Litis: nuestros honorarios están atados al éxito de su caso.</p>
-                </div>
-                <div class="faq">
-                    <strong>¿Tengo que ir al estudio personalmente?</strong>
-                    <p>No es necesario. Gestionamos todo mediante videollamadas y canales digitales con plena validez legal.</p>
-                </div>
-                <div class="faq">
-                    <strong>¿Cómo percibo mi indemnización?</strong>
-                    <p>Mediante depósito bancario directo en cuenta judicial y transferencia a su CBU personal. Seguridad absoluta.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <h3 style="color: var(--oro); letter-spacing: 2px;">RAMÍREZ & ASOCIADOS</h3>
-        <p>Expertos en Derecho Civil y Laboral | 2011 - 2026</p>
-    </footer>
-
-</body>
-</html>
+                    <strong>1. ¿Cómo inicio mi reclamo de forma virtual?</strong>
+                    <p
