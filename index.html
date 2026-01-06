@@ -7,80 +7,54 @@
     <style>
         :root { --oro: #c5a059; --azul: #0a0f1a; --crema: #f4f1ea; }
         body { margin: 0; padding: 0; background-color: #05080f; color: #333; font-family: 'Times New Roman', Times, serif; }
-        
-        header { 
-            background: linear-gradient(rgba(10,15,26,0.9), rgba(10,15,26,0.9)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop'); 
-            background-size: cover; background-position: center; padding: 120px 20px; text-align: center; border-bottom: 4px solid var(--oro); 
-        }
-        
-        .logo-estudio { max-width: 200px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(197,160,89,0.3)); }
-        h1 { color: var(--oro); font-size: 3rem; letter-spacing: 8px; text-transform: uppercase; margin: 0; }
-        .sub-header { color: #fff; letter-spacing: 3px; font-size: 1rem; margin-top: 10px; opacity: 0.7; }
-        
+        header { background: linear-gradient(rgba(10,15,26,0.9), rgba(10,15,26,0.9)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; padding: 100px 20px; text-align: center; border-bottom: 4px solid var(--oro); }
+        .logo-estudio { max-width: 180px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(197,160,89,0.3)); }
+        h1 { color: var(--oro); font-size: 2.8rem; letter-spacing: 8px; text-transform: uppercase; margin: 0; }
+        .sub-header { color: #fff; letter-spacing: 3px; font-size: 0.9rem; margin-top: 10px; opacity: 0.7; }
         .content-wrapper { background-color: var(--crema); background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); }
-        
-        .seccion { padding: 80px 20px; max-width: 1000px; margin: 0 auto; text-align: center; }
-        h2 { font-size: 2.2rem; color: var(--azul); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 40px; }
-        h2::after { content: ""; display: block; width: 50px; height: 2px; background: var(--oro); margin: 20px auto; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .tarjeta { background: white; padding: 40px; border: 1px solid #e0e0e0; box-shadow: 12px 12px 0px rgba(10,15,26,0.03); transition: 0.3s; text-align: left; }
-        .tarjeta:hover { border-color: var(--oro); transform: translateY(-3px); }
-        .tarjeta h4 { color: var(--oro); font-size: 1.4rem; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px; }
-        
-        .seccion-oscura { background: var(--azul); color: #fff; padding: 100px 20px; text-align: center; border-top: 5px solid var(--oro); border-bottom: 5px solid var(--oro); }
-        .cita { max-width: 800px; margin: 0 auto; font-size: 1.6rem; font-style: italic; color: var(--oro); line-height: 1.8; }
-
-        /* FAQ DISEÑO DELICADO */
-        .faq-container { max-width: 850px; margin: 0 auto; text-align: left; }
-        .faq-item { margin-bottom: 40px; border-bottom: 1px solid #dcdcdc; padding-bottom: 25px; }
-        .faq-item strong { display: block; font-size: 1.25rem; color: var(--azul); margin-bottom: 12px; font-weight: normal; font-style: italic; }
-        .faq-item p { font-size: 1.05rem; color: #555; line-height: 1.7; margin: 0; font-family: 'Georgia', serif; }
-
-        .wa-flotante { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white !important; padding: 16px 28px; border-radius: 4px; text-decoration: none; font-weight: bold; z-index: 1000; box-shadow: 0 8px 20px rgba(0,0,0,0.2); font-family: sans-serif; letter-spacing: 1px; }
-        
-        footer { background: #000; color: #666; padding: 60px 20px; text-align: center; }
+        .seccion { padding: 60px 20px; max-width: 1000px; margin: 0 auto; text-align: center; }
+        h2 { font-size: 2rem; color: var(--azul); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; }
+        h2::after { content: ""; display: block; width: 50px; height: 2px; background: var(--oro); margin: 15px auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .tarjeta { background: white; padding: 35px; border: 1px solid #e0e0e0; box-shadow: 10px 10px 0px rgba(10,15,26,0.03); text-align: left; }
+        .tarjeta h4 { color: var(--oro); font-size: 1.3rem; margin-top: 0; text-transform: uppercase; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
+        .seccion-oscura { background: var(--azul); color: #fff; padding: 80px 20px; text-align: center; border-top: 5px solid var(--oro); border-bottom: 5px solid var(--oro); }
+        .cita { max-width: 800px; margin: 0 auto; font-size: 1.5rem; font-style: italic; color: var(--oro); line-height: 1.7; }
+        .faq-item { margin-bottom: 30px; border-bottom: 1px solid #dcdcdc; padding-bottom: 20px; text-align: left; max-width: 850px; margin-left: auto; margin-right: auto; }
+        .faq-item strong { display: block; font-size: 1.2rem; color: var(--azul); margin-bottom: 10px; font-style: italic; font-weight: normal; }
+        .faq-item p { font-size: 1rem; color: #555; line-height: 1.6; font-family: 'Georgia', serif; }
+        .redes-container { margin: 20px 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+        .red-link { color: var(--oro); text-decoration: none; border: 1px solid var(--oro); padding: 8px 15px; font-size: 0.75rem; letter-spacing: 1px; transition: 0.3s; }
+        .red-link:hover { background: var(--oro); color: #000; }
+        .wa-flotante { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white !important; padding: 15px 25px; border-radius: 4px; text-decoration: none; font-weight: bold; z-index: 1000; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        footer { background: #000; color: #666; padding: 50px 20px; text-align: center; }
     </style>
 </head>
 <body>
-
     <a href="https://wa.me/5491146731730?text=Hola%20Estudio%20Ramirez,%20necesito%20realizar%20una%20consulta." class="wa-flotante" target="_blank">📥 MANDANOS UN WHATSAPP</a>
-
     <header>
         <img src="logo.png" alt="Estudio Ramírez" class="logo-estudio">
         <h1>RAMÍREZ & ASOC.</h1>
         <div class="sub-header">TRADICIÓN JURÍDICA & MODERNIDAD DIGITAL</div>
     </header>
-
     <div class="content-wrapper">
         <section class="seccion">
             <h2>Excelencia Profesional</h2>
             <div class="grid">
-                <div class="tarjeta">
-                    <h4>Estrategia</h4>
-                    <p>Más de 15 años de experiencia diseñando defensas técnicas sólidas en fueros Civiles y Laborales.</p>
-                </div>
-                <div class="tarjeta">
-                    <h4>Transparencia</h4>
-                    <p>Honestidad procesal absoluta. Usted conocerá la realidad de su expediente en cada etapa del proceso.</p>
-                </div>
-                <div class="tarjeta">
-                    <h4>Prestigio</h4>
-                    <p>Atención personalizada orientada a resultados en CABA y toda la Provincia de Buenos Aires.</p>
-                </div>
+                <div class="tarjeta"><h4>Estrategia</h4><p>Más de 15 años diseñando defensas técnicas sólidas en fueros Civiles y Laborales.</p></div>
+                <div class="tarjeta"><h4>Transparencia</h4><p>Honestidad procesal absoluta. Usted conocerá la realidad de su expediente en cada etapa.</p></div>
+                <div class="tarjeta"><h4>Prestigio</h4><p>Atención personalizada orientada a resultados en CABA y toda la Provincia de Buenos Aires.</p></div>
             </div>
         </section>
-
         <section class="seccion-oscura">
             <div class="cita">"Desde 2020, nuestra firma evolucionó. Integramos trayectoria presencial con infraestructura digital de élite, brindando seguridad sin importar la distancia."</div>
         </section>
-
         <section class="seccion">
             <h2>Áreas de Práctica</h2>
             <div class="grid">
                 <div class="tarjeta" style="background: var(--azul); color: white; border: none;">
                     <h4 style="color: var(--oro);">Derecho Laboral</h4>
-                    <ul style="padding-left: 20px; line-height: 2.2; font-family: 'Georgia', serif;">
+                    <ul style="padding-left: 20px; line-height: 2; font-family: 'Georgia', serif;">
                         <li>Despidos directos e indirectos</li>
                         <li>Accidentes de Trabajo y ART</li>
                         <li>Trabajo no registrado (En negro)</li>
@@ -90,7 +64,7 @@
                 </div>
                 <div class="tarjeta">
                     <h4>Derecho Civil</h4>
-                    <ul style="padding-left: 20px; line-height: 2.2; font-family: 'Georgia', serif;">
+                    <ul style="padding-left: 20px; line-height: 2; font-family: 'Georgia', serif;">
                         <li>Sucesiones y Herencias</li>
                         <li>Accidentes de Tránsito</li>
                         <li>Daños y Perjuicios</li>
@@ -100,39 +74,24 @@
                 </div>
             </div>
         </section>
-
         <section class="seccion">
             <h2>Consultas Frecuentes</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <strong>¿Cómo inicio mi reclamo de forma virtual?</strong>
-                    <p>El proceso es simple: nos contacta vía WhatsApp para una evaluación preliminar. Luego, mediante el envío digital de su DNI y documentación pertinente, coordinamos una entrevista virtual para trazar la estrategia legal.</p>
-                </div>
-                <div class="faq-item">
-                    <strong>¿La redacción de telegramas laborales tiene costo?</strong>
-                    <p>No. Por imperio legal, los Telegramas Laborales (TCL) son gratuitos para el trabajador. Nuestro estudio brinda el asesoramiento técnico necesario para asegurar que el intercambio epistelar sea jurídicamente sólido.</p>
-                </div>
-                <div class="faq-item">
-                    <strong>¿Es necesario abonar gastos para iniciar un reclamo por Despido o ART?</strong>
-                    <p>Bajo la modalidad de Cuota Litis, nuestro estudio solo percibe honorarios ante un resultado favorable o la concreción de un acuerdo. Esto garantiza que el acceso a la justicia sea pleno y sin barreras económicas iniciales.</p>
-                </div>
-                <div class="faq-item">
-                    <strong>¿Cómo se desarrollan las audiencias en la modalidad digital?</strong>
-                    <p>Tanto en el ámbito del SECLO como en Mediaciones Civiles, las audiencias se celebran mediante plataformas oficiales de videoconferencia. Brindamos el soporte técnico y la representación profesional en cada paso del acta digital.</p>
-                </div>
-                <div class="faq-item">
-                    <strong>¿Cómo se percibe el capital una vez finalizado el proceso?</strong>
-                    <p>La seguridad de nuestros clientes es prioridad. Todo capital proveniente de sentencias o acuerdos se deposita en cuentas judiciales oficiales y se transfiere de forma directa a la cuenta bancaria (CBU) personal del titular.</p>
-                </div>
-            </div>
+            <div class="faq-item"><strong>¿Cómo inicio mi reclamo de forma virtual?</strong><p>Nos contacta vía WhatsApp, envía digitalmente su DNI y documentación, y coordinamos una entrevista virtual para trazar la estrategia.</p></div>
+            <div class="faq-item"><strong>¿La redacción de telegramas laborales tiene costo?</strong><p>No. Los Telegramas Laborales (TCL) son gratuitos para el trabajador por ley. Brindamos el asesoramiento técnico para asegurar su validez.</p></div>
+            <div class="faq-item"><strong>¿Debo pagar para iniciar un reclamo por Despido o ART?</strong><p>No. Bajo Cuota Litis, solo percibimos honorarios ante un resultado favorable o acuerdo. El acceso a la justicia es sin barreras iniciales.</p></div>
+            <div class="faq-item"><strong>¿Cómo se desarrollan las audiencias digitales?</strong><p>En SECLO o Mediaciones Civiles, se celebran por videoconferencia oficial. Brindamos el soporte y la representación profesional en todo momento.</p></div>
+            <div class="faq-item"><strong>¿Cómo cobro mi dinero de forma segura?</strong><p>Todo capital se deposita en cuentas judiciales oficiales y se transfiere de forma directa a la cuenta bancaria (CBU) personal del titular.</p></div>
         </section>
     </div>
-
     <footer>
-        <h3 style="color: var(--oro); letter-spacing: 2px; text-transform: uppercase;">RAMÍREZ & ASOCIADOS</h3>
+        <h3 style="color: var(--oro); letter-spacing: 2px;">RAMÍREZ & ASOCIADOS</h3>
         <p>Defensa Integral Civil y Laboral | Trayectoria desde 2011</p>
-        <p style="font-size: 0.8rem; opacity: 0.4; margin-top: 30px;">© 2026 Todos los derechos reservados.</p>
+        <div class="redes-container">
+            <a href="https://www.facebook.com/profile.php?id=61579175520978" class="red-link" target="_blank">FACEBOOK</a>
+            <a href="https://www.instagram.com/estudioramirezart/" class="red-link" target="_blank">INSTAGRAM</a>
+            <a href="https://www.tiktok.com/@estudioramirezasoc" class="red-link" target="_blank">TIKTOK</a>
+        </div>
+        <p style="font-size: 0.7rem; opacity: 0.4; margin-top: 20px;">© 2026 Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>
