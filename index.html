@@ -33,6 +33,26 @@
         header h1 { font-size: 2.8rem; margin: 0; letter-spacing: 3px; text-transform: uppercase; }
         .sub-header { color: #ffffff; font-size: 1.1rem; font-style: italic; margin-top: 15px; opacity: 0.9; }
 
+        /* SECCIÓN SOBRE NOSOTROS (NUEVA) */
+        .nosotros-section {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .nosotros-container { max-width: 1000px; margin: 0 auto; }
+        .nosotros-titulo { color: #0d1424; font-size: 2.2rem; margin-bottom: 20px; }
+        .nosotros-texto { font-size: 1.15rem; color: #444; max-width: 800px; margin: 0 auto 40px; }
+        
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .valor-item { padding: 20px; }
+        .valor-item h4 { color: #d4af37; font-size: 1.3rem; margin-bottom: 10px; text-transform: uppercase; }
+        .valor-item p { font-family: sans-serif; font-size: 0.95rem; color: #666; }
+
         /* SECCIÓN VIRTUALIDAD */
         .virtual-section { 
             background-color: #121c2f; 
@@ -54,22 +74,17 @@
             border: 1px solid rgba(212, 175, 55, 0.2);
         }
 
-        /* CONTENEDOR */
+        /* CONTENEDOR SERVICIOS Y FAQ */
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
 
-        /* SERVICIOS */
         .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 50px; }
         .servicio-item { background-color: #0d1424; color: white; padding: 30px; border-top: 3px solid #d4af37; }
         .servicio-item h3 { color: #d4af37; margin-top: 0; }
-        .servicio-item ul { padding-left: 20px; }
 
-        /* FAQ REESTRUCTURADO (TODO VISIBLE) */
         .faq-titulo { text-align: center; color: #0d1424; font-size: 2rem; margin-bottom: 40px; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
         .faq-bloque { margin-bottom: 35px; background: white; padding: 25px; border-left: 5px solid #d4af37; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .faq-bloque h3 { margin-top: 0; color: #0d1424; font-size: 1.2rem; }
-        .faq-bloque p { margin-bottom: 0; color: #444; }
 
-        /* BOTONES Y OTROS */
+        /* WHATSAPP Y BOTONES */
         .wa-link-flotante {
             position: fixed;
             bottom: 30px;
@@ -113,6 +128,34 @@
         <p class="sub-header">“Defensa Inquebrantable y Rigor Técnico tras 15 años de trayectoria.”</p>
     </header>
 
+    <section class="nosotros-section">
+        <div class="nosotros-container">
+            <h2 class="nosotros-titulo">¿Por qué confiar su caso en nosotros?</h2>
+            <p class="nosotros-texto">
+                Entendemos que detrás de cada consulta hay una preocupación personal, familiar o laboral. Por eso, nuestro enfoque combina la **máxima rigurosidad legal** con un **trato humano y cercano**. No somos solo abogados, somos sus aliados en la resolución de conflictos.
+            </p>
+            
+            <div class="valores-grid">
+                <div class="valor-item">
+                    <h4>⚖️ Honestidad Total</h4>
+                    <p>Le diremos la verdad sobre la viabilidad de su caso desde la primera consulta. La transparencia es la base de nuestra relación.</p>
+                </div>
+                <div class="valor-item">
+                    <h4>🤝 Compromiso Humano</h4>
+                    <p>Usted no es un número de expediente. Atendemos de forma personalizada, escuchando y respondiendo cada duda en el proceso.</p>
+                </div>
+                <div class="valor-item">
+                    <h4>🎓 Experiencia Comprobada</h4>
+                    <p>Más de 15 años litigando en los tribunales de CABA y GBA nos dan el conocimiento necesario para anticiparnos a la contraparte.</p>
+                </div>
+                <div class="valor-item">
+                    <h4>⚡ Rapidez y Tecnología</h4>
+                    <p>Utilizamos herramientas digitales para agilizar los reclamos, permitiendo que su caso avance sin demoras innecesarias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="virtual-section">
         <h2 style="color: #d4af37;">Atención 100% Virtual</h2>
         <div class="virtual-grid">
@@ -149,48 +192,22 @@
 
         <div class="faq-bloque">
             <h3>1. ¿Cómo inicio mi reclamo de forma virtual?</h3>
-            <p>Es muy sencillo: nos contactás por WhatsApp, nos enviás fotos de tu DNI y de la documentación (recibos, telegramas, fotos) y coordinamos una entrevista virtual para definir la estrategia legal.</p>
+            <p>Es muy sencillo: nos contactás por WhatsApp, nos enviás fotos de tu DNI y de la documentación y coordinamos una entrevista virtual para definir la estrategia legal.</p>
         </div>
 
         <div class="faq-bloque">
             <h3>2. ¿Se cobra la redacción de telegramas y cartas documento?</h3>
-            <p>Los <strong>Telegramas Laborales (TCL)</strong> son gratuitos para el trabajador. Para Cartas Documento civiles o contratos, se cobra un honorario profesional por la redacción técnica.</p>
+            <p>Los <strong>Telegramas Laborales (TCL)</strong> son gratuitos para el trabajador. Para Cartas Documento civiles o contratos, se cobra un honorario profesional.</p>
         </div>
 
         <div class="faq-bloque">
             <h3>3. ¿Tengo que pagar para iniciar un reclamo por Despido o ART?</h3>
-            <p>No. Trabajamos con el sistema de <strong>Cuota Litis</strong>: nosotros invertimos el trabajo y el cliente solo abona honorarios si logramos un resultado favorable o un acuerdo bancarizado.</p>
+            <p>No. Trabajamos con el sistema de <strong>Cuota Litis</strong>: el cliente solo abona honorarios si logramos un resultado favorable o un acuerdo.</p>
         </div>
 
         <div class="faq-bloque">
-            <h3>4. Me tienen trabajando "en negro", ¿puedo reclamar?</h3>
-            <p>Absolutamente. Iniciamos el intercambio telegráfico para que se regularice tu situación o te consideres despedido con todas las indemnizaciones agravadas que marca la ley.</p>
+            <h3>4. ¿Cómo cobro mi dinero si el proceso es virtual?</h3>
+            <p>Todo el sistema judicial está bancarizado. El dinero se deposita en una <strong>cuenta judicial</strong> a tu nombre y luego se transfiere a tu <strong>CBU personal</strong>. Es 100% seguro.</p>
         </div>
 
-        <div class="faq-bloque">
-            <h3>5. Tuve un accidente yendo al trabajo, ¿me corresponde indemnización?</h3>
-            <p>Sí, es un accidente <strong>in itinere</strong>. La ART debe cubrir los gastos médicos y, si te queda alguna secuela física, te corresponde una indemnización que nosotros reclamamos por vos.</p>
-        </div>
-
-        <div class="faq-bloque">
-            <h3>6. Recibí una Carta Documento, ¿cuánto tiempo tengo para responder?</h3>
-            <p>Los plazos suelen ser de 48 a 72 hs. Es vital que no respondas por tu cuenta. Envianos una foto de inmediato para redactar la contestación técnica adecuada.</p>
-        </div>
-
-        <div class="faq-bloque">
-            <h3>7. ¿Cómo cobro mi dinero si el proceso es virtual?</h3>
-            <p>Todo el sistema judicial está bancarizado. El dinero de acuerdos o sentencias se deposita directamente en una <strong>cuenta judicial</strong> a tu nombre y luego se transfiere a tu <strong>CBU personal</strong>. Es un proceso 100% seguro y oficial.</p>
-        </div>
-
-        <a href="https://wa.me/5491146731730" class="btn-contacto">INICIAR MI CONSULTA AHORA</a>
-
-    </div>
-
-    <footer>
-        <div style="color: #d4af37; letter-spacing: 4px; font-size: 1.5rem; margin-bottom: 15px;">RAMÍREZ & ASOCIADOS</div>
-        <p>15 Años de Experiencia Judicial en GBA y CABA</p>
-        <p style="opacity: 0.3; font-size: 0.75rem; margin-top: 40px;">© 2026 Todos los derechos reservados.</p>
-    </footer>
-
-</body>
-</html>
+        <a href="https://wa.me/5491146731730" class="btn
