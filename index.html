@@ -5,248 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Ramírez & Asoc. | Excelencia Jurídica</title>
     <style>
-        /* ESTILOS PREMIUM */
+        /* DISEÑO PREMIUM LUXURY LAW */
         :root {
             --oro: #c5a059;
-            --oro-brillante: #e5c185;
-            --azul-oscuro: #0a0f1a;
-            --crema-premium: #f9f7f2;
+            --azul: #0a0f1a;
+            --crema: #f4f1ea;
         }
 
         body { 
-            margin: 0; 
-            padding: 0; 
-            background-color: var(--crema-premium); 
-            color: #1a1a1a; 
+            margin: 0; padding: 0; 
+            background-color: #05080f; /* Fondo oscuro base */
+            color: #333; 
             font-family: 'Times New Roman', Times, serif; 
-            line-height: 1.6;
         }
 
-        /* FONDO TEXTURIZADO */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('https://www.transparenttextures.com/patterns/pinstriped-suit.png');
-            opacity: 0.4;
-            z-index: -1;
-        }
-
-        /* HEADER ELEGANTE */
+        /* HEADER IMPACTANTE */
         header { 
-            background: linear-gradient(rgba(10, 15, 26, 0.95), rgba(10, 15, 26, 0.95)), 
-                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(10,15,26,0.9), rgba(10,15,26,0.9)), 
+                        url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
-            color: var(--oro); 
-            padding: 100px 20px; 
-            text-align: center; 
+            padding: 120px 20px;
+            text-align: center;
             border-bottom: 4px solid var(--oro);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        .logo-estudio { 
-            max-width: 220px; 
-            filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.5));
-            margin: 0 auto 30px; 
-            display: block; 
-        }
+        .logo-estudio { max-width: 200px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(197,160,89,0.3)); }
+        
+        h1 { color: var(--oro); font-size: 3.5rem; letter-spacing: 10px; text-transform: uppercase; margin: 0; }
+        .sub-header { color: #fff; letter-spacing: 4px; font-size: 1rem; margin-top: 10px; opacity: 0.7; }
 
-        header h1 { 
-            font-size: 3.5rem; 
-            margin: 0; 
-            text-transform: uppercase; 
-            letter-spacing: 8px; 
-            font-weight: 400;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        }
+        /* SECCIONES CON TEXTURA */
+        .content-wrapper { background-color: var(--crema); background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); }
 
-        .sub-header { color: #fff; font-size: 1.2rem; letter-spacing: 2px; margin-top: 15px; opacity: 0.8; }
-
-        /* SECCIONES */
         .seccion { padding: 80px 20px; max-width: 1100px; margin: 0 auto; text-align: center; }
-        
-        h2 { 
-            font-size: 2.5rem; 
-            color: var(--azul-oscuro); 
-            position: relative; 
-            margin-bottom: 50px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-        
-        h2::after {
-            content: "";
-            width: 80px;
-            height: 3px;
-            background: var(--oro);
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
 
-        /* TARJETAS PREMIUM */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-        
-        .tarjeta-premium { 
-            background: #fff; 
-            padding: 40px; 
-            border: 1px solid #e0e0e0; 
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-            transition: all 0.4s ease;
-            border-top: 5px solid var(--azul-oscuro);
-        }
+        h2 { font-size: 2.2rem; color: var(--azul); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 40px; }
+        h2::after { content: ""; display: block; width: 60px; height: 3px; background: var(--oro); margin: 15px auto; }
 
-        .tarjeta-premium:hover {
-            transform: translateY(-10px);
-            border-top: 5px solid var(--oro);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
-        .tarjeta-premium h4 { color: var(--oro); font-size: 1.5rem; margin-bottom: 20px; text-transform: uppercase; }
-
-        /* SECCION PANDEMIA/VIRTUALIDAD ESTILO DOCUMENTO */
-        .seccion-cita {
-            background: var(--azul-oscuro);
-            color: #fff;
-            padding: 100px 20px;
-            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-        }
-
-        .cita-texto {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.5rem;
-            line-height: 2;
-            font-style: italic;
-            color: var(--oro-brillante);
-        }
-
-        /* FAQ TIPO EXPEDIENTE */
-        .faq-bloque { 
-            text-align: left; 
-            background: #fff; 
-            padding: 30px; 
-            margin-bottom: 25px; 
-            border: 1px solid #ddd;
-            border-left: 8px solid var(--azul-oscuro);
-        }
-        
-        .faq-bloque strong { color: var(--azul-oscuro); font-size: 1.2rem; display: block; margin-bottom: 10px; }
-
-        /* BOTONES */
-        .wa-flotante { 
-            position: fixed; bottom: 30px; right: 30px; 
-            background: linear-gradient(135deg, #25d366, #128c7e);
-            color: white !important; padding: 18px 30px; border-radius: 5px; 
-            text-decoration: none; font-weight: bold; z-index: 10000;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            text-transform: uppercase; letter-spacing: 1px;
-            font-family: sans-serif;
-        }
-
-        .btn-oro {
-            display: inline-block;
-            background: var(--azul-oscuro);
-            color: var(--oro);
-            padding: 20px 50px;
-            text-decoration: none;
-            font-weight: bold;
-            border: 2px solid var(--oro);
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .tarjeta { 
+            background: white; padding: 40px; 
+            border: 1px solid #ddd; 
+            box-shadow: 10px 10px 0px rgba(10,15,26,0.05); /* Sombra estilo bloque */
             transition: 0.3s;
         }
+        .tarjeta:hover { transform: translateY(-5px); box-shadow: 15px 15px 0px rgba(197,160,89,0.2); border-color: var(--oro); }
 
-        .btn-oro:hover { background: var(--oro); color: var(--azul-oscuro); }
+        .tarjeta h4 { color: var(--oro); font-size: 1.4rem; margin-top: 0; text-transform: uppercase; }
 
-        footer { background: #05080f; color: #666; padding: 60px 20px; text-align: center; border-top: 2px solid var(--oro); }
+        /* SECCION PANDEMIA LUXURY */
+        .seccion-oscura { 
+            background: var(--azul); color: #fff; padding: 100px 20px; 
+            text-align: center; border-top: 5px solid var(--oro); border-bottom: 5px solid var(--oro);
+        }
+        .cita { max-width: 800px; margin: 0 auto; font-size: 1.6rem; font-style: italic; color: var(--oro); line-height: 1.8; }
+
+        /* FAQ EXPEDIENTE */
+        .faq { text-align: left; background: #fff; padding: 25px; margin-bottom: 20px; border-left: 10px solid var(--azul); border-right: 1px solid #ddd; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+
+        /* BOTONES */
+        .btn-oro { 
+            display: inline-block; background: var(--azul); color: var(--oro); 
+            padding: 20px 40px; border: 2px solid var(--oro); 
+            text-decoration: none; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;
+        }
+        .btn-oro:hover { background: var(--oro); color: var(--azul); }
+
+        .wa-flotante { 
+            position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white !important; 
+            padding: 15px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); font-family: sans-serif;
+        }
+
+        footer { background: #000; color: #555; padding: 60px 20px; text-align: center; }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/5491146731730" class="wa-flotante" target="_blank">💬 Consultar a un Abogado</a>
+    <a href="https://wa.me/5491146731730" class="wa-flotante" target="_blank">📥 CONSULTA LEGAL WHATSAPP</a>
 
     <header>
         <img src="logo.png" alt="Estudio Ramírez" class="logo-estudio">
         <h1>RAMÍREZ & ASOC.</h1>
-        <div class="sub-header">EXCELENCIA JURÍDICA & RIGOR TÉCNICO</div>
+        <div class="sub-header">TRADICIÓN JURÍDICA & MODERNIDAD DIGITAL</div>
     </header>
 
-    <section class="seccion">
-        <h2>Compromiso y Resultados</h2>
-        <p style="font-size: 1.3rem; color: #555;">Desde 2011 brindando seguridad jurídica en CABA y GBA.</p>
-        <div class="grid">
-            <div class="tarjeta-premium">
-                <h4>Honestidad</h4>
-                <p>Nuestra ética profesional nos obliga a brindarle un panorama real y honesto sobre sus posibilidades legales.</p>
+    <div class="content-wrapper">
+        <section class="seccion">
+            <h2>Excelencia Profesional</h2>
+            <div class="grid">
+                <div class="tarjeta">
+                    <h4>Estrategia</h4>
+                    <p>Más de 15 años de experiencia diseñando defensas técnicas sólidas en fueros Civiles y Laborales.</p>
+                </div>
+                <div class="tarjeta">
+                    <h4>Transparencia</h4>
+                    <p>Honestidad procesal absoluta. Usted conocerá la realidad de su expediente en cada etapa del camino.</p>
+                </div>
+                <div class="tarjeta">
+                    <h4>Prestigio</h4>
+                    <p>Atención personalizada orientada a resultados, con presencia activa en CABA y todo el conurbano bonaerense.</p>
+                </div>
             </div>
-            <div class="tarjeta-premium">
-                <h4>Compromiso</h4>
-                <p>Cada caso es una prioridad. Usted contará con la atención directa de abogados de amplia trayectoria.</p>
-            </div>
-            <div class="tarjeta-premium">
-                <h4>Resultados</h4>
-                <p>La experiencia acumulada en tribunales nos permite diseñar estrategias orientadas al éxito de su reclamo.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="seccion-cita">
-        <div class="cita-texto">
-            "La transformación iniciada en 2020 redefinió nuestra misión: hoy combinamos nuestra sólida trayectoria presencial con una estructura digital de vanguardia, garantizando que el acceso a la justicia sea ágil, moderno y sin fronteras."
-        </div>
-    </section>
+        <section class="seccion-oscura">
+            <div class="cita">
+                "Desde 2020, nuestra firma evolucionó. Integramos nuestra trayectoria presencial con una infraestructura digital de élite, brindando seguridad jurídica sin importar la distancia."
+            </div>
+        </section>
 
-    <section class="seccion">
-        <h2>Atención Especializada</h2>
-        <div class="grid">
-            <div class="tarjeta-premium" style="background: var(--azul-oscuro); color: white;">
-                <h4 style="color: var(--oro);">Derecho Laboral</h4>
-                <ul style="text-align: left; list-style: square;">
-                    <li>Despidos de alta complejidad</li>
-                    <li>Accidentes de Trabajo (ART)</li>
-                    <li>Trabajo no registrado</li>
-                    <li>Diferencias salariales y SECLO</li>
-                </ul>
+        <section class="seccion">
+            <h2>Áreas de Práctica</h2>
+            <div class="grid">
+                <div class="tarjeta">
+                    <h4>Derecho Laboral</h4>
+                    <p>Despidos, ART, Accidentes y Trabajo no registrado. Defensa integral del trabajador.</p>
+                </div>
+                <div class="tarjeta">
+                    <h4>Derecho Civil</h4>
+                    <p>Sucesiones, Accidentes de Tránsito y Daños. Gestión de conflictos patrimoniales.</p>
+                </div>
             </div>
-            <div class="tarjeta-premium">
-                <h4>Derecho Civil</h4>
-                <ul style="text-align: left; list-style: square;">
-                    <li>Sucesiones y Herencias</li>
-                    <li>Accidentes de Tránsito</li>
-                    <li>Daños y Perjuicios</li>
-                    <li>Contratos y Mediaciones</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="seccion" style="background: #fff; max-width: 100%; border-top: 1px solid #ddd;">
-        <div style="max-width: 900px; margin: 0 auto;">
-            <h2>Consultas Frecuentes</h2>
-            <div class="faq-bloque">
-                <strong>¿Cómo se gestiona mi caso de forma remota?</strong>
-                <p>Utilizamos canales digitales certificados para el envío de documentación y firmas, garantizando la misma validez legal que una consulta presencial.</p>
+        <section class="seccion">
+            <h2>Preguntas Frecuentes</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq">
+                    <strong>¿Cómo es el cobro de honorarios?</strong>
+                    <p>En reclamos laborales trabajamos a Cuota Litis: nuestros honorarios están atados al éxito de su caso.</p>
+                </div>
+                <div class="faq">
+                    <strong>¿Tengo que ir al estudio personalmente?</strong>
+                    <p>No es necesario. Gestionamos todo mediante videollamadas y canales digitales con plena validez legal.</p>
+                </div>
+                <div class="faq">
+                    <strong>¿Cómo percibo mi indemnización?</strong>
+                    <p>Mediante depósito bancario directo en cuenta judicial y transferencia a su CBU personal. Seguridad absoluta.</p>
+                </div>
             </div>
-            <div class="faq-bloque">
-                <strong>¿Cuál es el costo de los honorarios?</strong>
-                <p>En casos laborales, operamos bajo el sistema de Cuota Litis: solo percibimos honorarios si usted percibe su indemnización.</p>
-            </div>
-            <div class="faq-bloque">
-                <strong>¿En qué zonas tienen jurisdicción?</strong>
-                <p>Representamos clientes en toda la Ciudad Autónoma de Buenos Aires y el Gran Buenos Aires (Moreno, Merlo, Morón, San Martín, entre otros).</p>
-            </div>
-            
+            <br><br>
             <a href="https://wa.me/5491146731730" class="btn-oro">Iniciar Consulta Profesional</a>
-        </div>
+        </section>
     </div>
 
     <footer>
-        <h3 style="color: var(--oro); letter-spacing: 3px;">RAMÍREZ & ASOCIADOS</h3>
-        <p>Expertos en Derecho Civil y Laboral</p>
-        <p style="font-size: 0.8rem; opacity: 0.4; margin-top: 30px;">© 2026 BUFETE DE ABOGADOS. TODOS LOS DERECHOS RESERVADOS.</p>
+        <h3 style="color: var(--oro);">RAMÍREZ & ASOCIADOS</h3>
+        <p>Expertos en Derecho Civil y Laboral | 2011 - 2026</p>
     </footer>
 
 </body>
